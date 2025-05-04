@@ -1113,8 +1113,8 @@ def nix_eval_config(
             ],
             flunkOnFailure=True,
             # TODO: support other branches?
-            doStepIf=lambda c: c.build.getProperty("branch", "")
-            == project.default_branch,
+            # doStepIf=lambda c: c.build.getProperty("branch", "")
+            # == project.default_branch,
             logEnviron=False,
         )
     )
